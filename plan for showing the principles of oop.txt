@@ -1,0 +1,5 @@
+2 characters, car and person. person will use normal movement while car will use tank controls.
+parent script of playermovement. with children scripts of carplayer and human player.
+this covers inheritance. encapsulation will be covered in the scripts between.
+this simple game will have an overhead camera that follows the player, there will be pickups of 3 different types that contribute to 3 different counters.
+there will be a simple spawn script that ensures there is a pickup for the player.
