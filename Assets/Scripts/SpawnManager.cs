@@ -3,21 +3,16 @@ using UnityEngine;
 
 public class SpawnManager : MonoBehaviour
 {
-    public GameObject spawnPrefab;
+    public GameObject[] spawnPrefab;
     private float spawnRangeMin = 5f;
     private float spawnRangeMax = 50f;
     private GameObject spawnCount;
-    private int spawnNumber = 1;
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-        
-    }
+    private int spawnNumber = 0;
     void spawnPickups(int pickupsToSpawn)
     {
         for (int i = 0; i < pickupsToSpawn; i++)
         {
-            Instantiate(spawnPrefab, GenerateSpawnPosition(), spawnPrefab.transform.rotation);
+            Instantiate(spawnPrefab[Random.Range(0, 3)], GenerateSpawnPosition(), spawnPrefab[Random.Range(0, 3)].transform.rotation);
         }
     }
     void Update()

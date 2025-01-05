@@ -3,8 +3,8 @@ using UnityEngine;
 public class PersonMovement : PlayerMovement //INHERITANCE from the playermovement script
 {
     private float totalSpeed;
-    private float runSpeed = 5.0f;
-    private float strafeSpeed = 3f;
+    private float runSpeed = 10f;
+    private float strafeSpeed = 10f;
     private float sprintSpeed = 1.5f;
     private Rigidbody playerRB;
     private void Awake()

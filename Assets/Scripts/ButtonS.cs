@@ -18,7 +18,7 @@ public class ButtonS : MonoBehaviour
     }
     public void StartGame()
     {
-        SceneManager.LoadScene(0);
+        SceneManager.LoadScene(1);
     }
 public void SelectCar()
     {
@@ -30,6 +30,6 @@ public void SelectPerson()
     }
     public void MainMenu() 
     {
-        SceneManager.LoadScene(1);
+        SceneManager.LoadScene(0);
     }
 }
