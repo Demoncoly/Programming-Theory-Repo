@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class CarMovement : PlayerMovement //INHERITANCE from the playermovement script
 {
-    private float horsePower = 0.5f;
+    private float horsePower = 1f;
     private float carTurnSpeed = 20f;
     [SerializeField] private float currentGear = 1; //Serialized to verify changing gears works
     private Rigidbody playerRB;
