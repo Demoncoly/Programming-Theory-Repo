@@ -15,7 +15,7 @@ public class PlayerMovement : MonoBehaviour
         VerticalMoves();
         ForwardMoves();
     }
-    public virtual void VerticalMoves() //ABSTRACTION tbd
+    public virtual void VerticalMoves() 
     {
         transform.Rotate(TurnSpeed * Time.deltaTime * Vector3.up * horizontalInput);
     }
